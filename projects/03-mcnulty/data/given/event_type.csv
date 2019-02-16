@@ -1,0 +1,12 @@
+id,label,description
+0,loc_up_c,"Location Update. Each LU performed by the subscriber generates a report to the external platform."
+1,imsi_att_с,"IMSI Attach. Turn on the phone in the same area (LA), in which the subscriber turned off his phone. If the subscriber has turned on the phone in another area (LA), the switch will generate a Type 0 (LU) event."
+2,par_c,"Changing the location of the subscriber during a call or SMS."
+3,delete_c,"Subscriber removed from VLR."
+4,departing_с,"Subscriber marked as `inactive` in case functionality 1627 is activated."
+5,detach_с,"The caller turned off your phone."
+6,i_det_с,"Definition of the subscriber as `unavailable`. (There was not a single periodical LU for a certain time)."
+7,gprs_act_с,"Activity is generated if the VLR learns about a change in the subscriber's location from the SGSN during paging via the Gs link."
+8,page_с,"Change cid after incoming call or SMS. (In the Page Response message, the CI field does not match the value stored in the VLR)."
+9,ms_info_с,"Activity is generated if the VLR learns about a change in subscriber location from the SGSN during the PSI procedure."
+10,refresh_c,"Change cid on request to update subscriber data during a voice call."
