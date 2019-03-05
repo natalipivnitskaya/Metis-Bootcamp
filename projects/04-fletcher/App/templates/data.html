@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+    <link rel="shortcut icon" type="image/png" href="static/img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/tree-viewer.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="left-side">
+            <div class="logo">
+                <!--<img src="static/img/logo.png" alt="" />-->
+            </div>
+            <div class="left-content">
+                <ul role="tablist">
+                    <li role="presentation"><a href="/" aria-controls="home" role="tab"><span><i class="fa fa-home"></i></span>Welcome</a></li>
+                    <li role="presentation" class="active"><a href="/data" aria-controls="home" role="tab"><span><i class="fa fa-folder"></i></span>Data</a></li>
+                    <li role="presentation"><a href="/comparison" aria-controls="home" role="tab"><span><i class="fa fa-code"></i></span>Comparison</a></li>
+                    <li role="presentation"><a href="/reviews" aria-controls="home" role="tab"><span><i class="fa fa-slideshare"></i></span>Reviews over time</a></li>
+                    <li role="presentation"><a href="/clustering" aria-controls="home" role="tab"><span><i class="fa fa-thumbs-up"></i></span>Clustering</a></li>
+                    <li role="presentation"><a href="/support" aria-controls="home" role="tab"><span><i class="fa fa-support"></i></span>Support</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Created by Nataliya Pivnitskaya &#169; 2019</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="right-content">
+                <div id="two" class="content active fade in">
+                    <h1>Data Structure</h1>
+                    <p>
+                        <br>Data was scrapped from: <a href="hhttps://www.whatuni.com/university-course-reviews/?pageno=12951" > /www.whatuni.com </a> <br>
+
+                        <br>Scrapping and loading to MongoDb py file could be found here: <a href="https://github.com/natalipivnitskaya/Metis-Bootcamp/tree/master/projects" > /www.github.com </a> <br>
+                
+                        <br> Each scrapped review has the following fields: </p>
+                        <br> 1. User Id
+                        <br> 2. College name
+                        <br> 3. Date of review
+                        <br> 4. Overall unoversity rating
+                        <br> 5. Text review for overall university rating
+                        <br> 6. Job prospects rating
+                        <br> 7. Text review for job prospects rating
+                        <br> 8. Course and Lectures rating
+                        <br> 9. Text review for course and lectures rating
+                        <br> 10. Accomodation rating
+                        <br> 11. Text review for accomodation rating
+                        <br> 12. Uni facilities rating
+                        <br> 13. Text review for uni facilities rating
+                        <br> 14. City life rating
+                        <br> 15. Text review for city life rating
+                        <br> 16. Clubs and Societies rating
+                        <br> 17. Text review for clubs and societies rating
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="static/js/jquery-3.1.0.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jstree.min.js"></script>
+    <script src="static/js/jstree.active.js"></script>
+</body>
+
+</html>

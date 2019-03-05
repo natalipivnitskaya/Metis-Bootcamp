@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comparison</title>
+    <link rel="shortcut icon" type="image/png" href="static/img/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/tree-viewer.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="left-side">
+            <div class="logo">
+                <!--<img src="static/img/logo.png" alt="" />-->
+            </div>
+            <div class="left-content">
+                <ul role="tablist">
+                    <li role="presentation"><a href="/" aria-controls="home" role="tab"><span><i class="fa fa-home"></i></span>Welcome</a></li>
+                    <li role="presentation"><a href="/data" aria-controls="home" role="tab"><span><i class="fa fa-folder"></i></span>Data</a></li>
+                    <li role="presentation" class="active"><a href="/comparison" aria-controls="home" role="tab"><span><i class="fa fa-code"></i></span>Comparison</a></li>
+                    <li role="presentation"><a href="/reviews" aria-controls="home" role="tab"><span><i class="fa fa-slideshare"></i></span>Reviews over time</a></li>
+                    <li role="presentation"><a href="/clustering" aria-controls="home" role="tab"><span><i class="fa fa-thumbs-up"></i></span>Clustering</a></li>
+                    <li role="presentation"><a href="/support" aria-controls="home" role="tab"><span><i class="fa fa-support"></i></span>Support</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Created by Nataliya Pivnitskaya &#169; 2019 </p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="right-content">
+                <div id="three" class="content active fade in">
+
+                    <h1> Comparison </h1>
+                    <div>Select universities you want to compare </div>
+                    <pre>
+                        <form method="post">
+                            First university:
+                            <select name="first">
+                                {% for college in list_of_colleges %}
+                                    <option value="{{ college }}" {% if college == first %} selected {% endif %}>{{ college }}</option>
+                                {% endfor %}
+                            </select><br>
+                            Second university:
+                            <select name="second">
+                                {% for college in list_of_colleges %}
+                                    <option value="{{ college }}" {% if college == second %} selected {% endif %}>{{ college }}</option>
+                                {% endfor %}
+                            </select><br>
+                            <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">Submit</button>
+                        </form>
+
+                        <iframe width="1000" height="800" frameborder="0" src="static/comparison.html?var={{ millis }}"></iframe>
+                    </pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/jquery-3.1.0.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jstree.min.js"></script>
+    <script src="static/js/jstree.active.js"></script>
+</body>
+
+</html>
