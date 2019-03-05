@@ -112,3 +112,6 @@ venv.bak/
 *.ipr
 *.iws
 
+# App
+static/comparison.html
+
